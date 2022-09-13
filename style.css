@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(226, 241, 11);
+}
+
+main {
+  width: 100%;
+}
+.titulo1 {
+  margin-left: 200px;
+  display: flex;
+  justify-content: flex-start;
+
+
+}
+h2 {
+  font-size: 1.6em solid;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 100;
+  text-align: left;
+  padding: 10px;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_link {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo_link > img {
+  width: 50%;
+}
+
+header > nav {
+  width: 50%;
+}
+
+.nav {
+  width: 50%;
+  background-color: rgb(255, 127, 127);
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  padding: 0.5em;
+}
+
+section article {
+  border: 3px solid rgb(14, 209, 8);
+  margin: 0.5em;
+  background-color: white;
+}
+
+section article img {
+  width: 100%;
+}
+
+section article h2 {
+  color: rgb(53, 10, 243);
+  margin: 0.5em;
+}
+
+section article p {
+  color: rgb(7, 7, 7);
+  margin: 0.5em;
+}
+
+section .video_link {
+  margin: 300px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(14, 209, 8);
+  padding: 0.5em 0.5em;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link_linkedin {
+  width: 20%;
+  height: 50px;
+  display: inline-block;
+}
+
+.link_linkedin a img {
+  width: 50%;
+}
+
+.link_github {
+  width: 20%;
+  height: 50px;
+  display: inline-block;
+}
+
+.link_github a img {
+  width: 50%;
+}
+
+/*Outros Tamanhos*/
+
+@media screen and (min-width: 425px) {
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    width: 50%;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section .video_link {
+    margin: 90px;
+  }
+  .link_github {
+    /* width: 50%; */
+  }
+  .link_linkedin {
+    /* width: 50%;  */
+  }
+  footer {
+    width: 1200px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1000px;
+    margin: auto;
+  }
+  footer {
+  }
+}
